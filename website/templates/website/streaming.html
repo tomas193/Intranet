@@ -1,0 +1,21 @@
+{%extends "website/base.html"%}
+{% load static %}
+{%block content%} 
+    <h1>Streaming</h1>
+    <br><br>
+    <div class="row">
+        <div class="col-md-8">
+            <p>hola</p>
+        </div>
+        <div class="col-md-4">
+            <article class="media content-section">
+                <table align="center" cellpadding="10" cellspacing="20">
+                    <tr>
+                        <td><h5>Upload Video</h5></td>
+                        <td><a href="/upload/"><img src="{% static 'upload.png' %}" style="width:70px;height:70px;"></a></td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+    </div>
+{%endblock%}

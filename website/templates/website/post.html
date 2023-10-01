@@ -1,0 +1,40 @@
+{%extends "website/base.html"%}
+{% load static %}
+{%block content%}
+<div class="row">
+  <div class="col-md-6">
+      {%for post in posts%}
+      <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+              {% if post.author == user %}
+              <table align="right">
+                <tr><td>
+                  <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'post-delete' post.id %}">Delete</a>
+                </td></tr>
+              </table>
+              {% endif %}
+            </div>
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+      {%endfor%}
+  </div>
+  <div class="col-md-6">
+    <table align="right">
+      <tr><td align="center">
+        <a href="/posts/new"><img src="{% static 'plus.png' %}" style="width:35px;height:35px;"></a>
+      </td>
+      </tr>
+      <tr><td align="center">
+          <h5>Create Post</h5>
+      </td>
+      </tr>
+    </table>
+  </div>
+  </div>
+</div>
+{%endblock%}

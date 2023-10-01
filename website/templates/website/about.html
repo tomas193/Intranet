@@ -1,0 +1,32 @@
+{%extends "website/base.html"%}
+{% load static %}
+{%block content%}
+    <h1>About Developers</h1>
+    <br><br>
+    <table align="center" cellpadding="5" cellspacing="20">
+        <tr>
+            <td align="center"><img class="rounded-circle account-img" src="{% static 'lalo.png' %}" style="width:200px;height:200px;"></td>
+            <td align="center"><img class="rounded-circle account-img" src="{% static 'yo.png' %}" style="width:200px;height:200px;"></td>
+            <td align="center"><img class="rounded-circle account-img" src="{% static 'alex.png' %}" style="width:200px;height:200px;"></td>
+        </tr>
+        <tr>
+            <td align="center"><h4>Eduardo</h4><h4>Mendoza</h4></td>
+            <td align="center"><h4>Tomas</h4><h4>Araujo</h4></td>
+            <td align="center"><h4>Alejandro</h4><h4>Dumas</h4></td>
+        </tr>
+    </table>
+    <br>
+    <p>Estudiantes de 7mo semestre en Ingenieria Cibernetica Electronica en CETYS Universidad.
+        A pesar de ser los mas atractivos de la escuela, estas jovenes promesas de la Ingenieria
+        han desarrollado este proyecto "ETANET" (por las iniciales de los creadores) para la materia
+        de Redes de Computadoras, de esta manera se podra demostrar el funcionamiento de una red 
+        local privada.
+    </p>
+    <br>
+    <table align="center">
+        <tr>
+            <td><img src="{% static 'devs.png' %}" style="width:450px;height:400px;"></td>
+        </tr>
+    </table>
+    <br><br>
+{%endblock%}

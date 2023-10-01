@@ -1,0 +1,27 @@
+{%extends "website/base.html"%}
+{% load static %}
+{%block content%}
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <br><br><br><br><br><br>
+    <div class="column">
+      <div><h1 align="center">ETANET Browser</h1></div>
+      <table align="center" cellpadding="5" cellspacing="20">
+        <tr>
+            <td align="center"><a href="/posts"><img src="{% static 'post.png' %}" style="width:90px;height:75px;"></a></td>
+            <td align="center"><a href="/streaming"><img src="{% static 'streaming.png' %}" style="width:100px;height:100px;"></a></td>
+            <td align="center"><a href="#"><img src="{% static 'chat.png' %}" style="width:90px;height:75px;"></a></td>
+        </tr>
+        <tr>
+          <td align="center">Posts</td>
+          <td align="center">Streaming</td>
+          <td align="center">Chat</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+{%endblock%}
