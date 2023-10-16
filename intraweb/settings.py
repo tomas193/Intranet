@@ -26,13 +26,12 @@ SECRET_KEY = 'django-insecure-f1a=kp6yke&m2ron#wf+%u5&0)oemjdk4h9r@g63e+59d6@%)f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['intranet.local']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'crispy_forms',
     'website.apps.WebsiteConfig',
     'users.apps.UsersConfig',
     'django.contrib.admin',
@@ -123,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CRISPY_TEMPLATE_PACK='bootstrap4'
+#CRISPY_TEMPLATE_PACK='bootstrap4'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
